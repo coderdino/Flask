@@ -1,0 +1,154 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins&family=Roboto&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Roboto&display=swap');
+* {
+    font-family: 'Poppins';
+    font-size: 16px;
+}
+
+ul {
+    list-style-type: none;
+    margin: 10px;
+    padding: 10px;
+    overflow: hidden;
+    background-color: #75C9C8;
+    border-radius: 15px;
+    box-shadow: rgba(0, 0, 0, 0.16) 0px 1px 4px;
+}
+
+li {
+    float: left;
+}
+
+li a {
+    display: block;
+    color: #F7F4EA;
+    text-align: center;
+    padding: 14px 16px;
+    text-decoration: none;
+    font-family: 'Poppins';
+    box-shadow: rgba(60, 64, 67, 0.3) 0px 1px 2px 0px, rgba(60, 64, 67, 0.15) 0px 1px 3px 1px;
+    margin-right: 10px;
+    border-radius: 15px;
+    transition: background-color 0.375s linear;
+}
+
+li a:hover{
+    background-color: #e4bad5;
+    border-radius: 15px;
+
+}
+
+.alert {
+    padding: 20px;
+    background-color: #dcb8cb;
+    color: white;
+    font-family: 'Poppins';
+    opacity: 1;
+    transition: opacity 0.6s;
+    box-shadow: rgba(0, 0, 0, 0.25) 0px 0.0625em 0.0625em, rgba(0, 0, 0, 0.25) 0px 0.125em 0.5em, rgba(255, 255, 255, 0.1) 0px 0px 0px 1px inset;
+    margin:10px;
+    border-radius: 15px;
+    animation: 2s anim-alert ease-in-out;
+}
+
+.alert.success {background-color: #c7f9cc;}
+.alert.info {background-color: #ceeaf7;}
+.alert.warning {background-color: #f2c57c;}
+
+.closebtn {
+    margin-left: 15px;
+    color: #4d505c;
+    font-weight: bold;
+    float: right;
+    font-size: 22px;
+    line-height: 20px;
+    cursor: pointer;
+    transition: 0.3s;
+
+}
+
+.closebtn:hover {
+    color: black;
+}
+
+.mybutton {
+    border-radius: 100px;
+    border-color: transparent;
+    width: 75px;
+    background-color: #C7EDE4;
+    height: 75px;
+    box-shadow: rgba(0, 0, 0, 0.422) 0px 1.5px 2.5px;
+    transition: border-radius 0.375s ease-in-out, background-color 0.2s ease-out, opacity 0.075s ease-out;
+}
+
+.mybutton:hover {
+    border-radius: 16px;
+}
+
+.mybutton:active{
+    opacity: 0.7;
+}
+
+.mybutton2 {
+    border-radius: 18px;
+    border-color: transparent;
+    width: auto;
+    padding-left: 25px;
+    padding-right: 25px;
+    background-color: #C7EDE4;
+    height: auto;
+    padding-top: 8.5px;
+    padding-bottom: 8.5px;
+    font-family: Roboto;
+    box-shadow: rgba(0, 0, 0, 0.422) 0px 1.5px 2.5px;
+}
+.material-symbols-outlined {
+    font-variation-settings: 'FILL' 0, 'wght' 400, 'GRAD' 200, 'opsz' 48
+}
+
+
+@keyframes anim-alert {
+    0% {
+      opacity: 0;
+      transform: translateX(80%);
+    }
+    20% {
+      opacity: 0;
+    }
+    50% {
+      opacity: 1;
+      transform: translateX(0%);
+    }
+    100% {
+      opacity: 1;
+      transform: translateX(0%);
+    }
+}
+.myDiv {
+    width: 15%;
+  background-color: white;
+  border: 1px solid;
+  height: 300px;
+  margin-top: 15px;
+  margin-right: 15px;
+  margin-left: 15px;
+  margin-bottom: 20px;
+  box-shadow: rgba(60, 64, 67, 0.3) 0px 1px 2px 0px, rgba(60, 64, 67, 0.15) 0px 1px 3px 1px;
+  border: none;
+  border-radius: 10px;
+  }
+
+  .myDiv:hover{
+  transition: 0.5s;
+  background-color: #e4bad5;
+}
+
+.flashcard{
+  border-radius: 15px;
+  width: 500px;
+  height: 500px;
+  margin: 10px;
+  border: transparent;
+  box-shadow: rgba(60, 64, 67, 0.3) 0px 1px 2px 0px, rgba(60, 64, 67, 0.15) 0px 1px 3px 1px;
+  font-size: 20px;
+}

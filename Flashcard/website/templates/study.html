@@ -1,0 +1,10 @@
+{% extends "base.html" %} {% block title %}Home{% endblock %} {% block content %}
+<br/>
+<h2 align="center">Your flashcard sets:</h2>
+{% for note in user.notes %}
+  <button type="button" class="myDiv" onClick="deleteNote({{ note.id }})">
+    {{note.linkname}}
+    <span aria-hidden="true">&times;</span>
+  </button>
+{% endfor %}
+{% endblock %}

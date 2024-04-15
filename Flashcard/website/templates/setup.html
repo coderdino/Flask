@@ -1,0 +1,30 @@
+{% extends "base.html" %} {% block title %}Home{% endblock %} {% block content %}
+<h1>Set name: {{nam}}</h1>
+<form method="POST">
+    <h1>   </h1>
+    <h3 align="center">New Question</h3>
+    <div class="form-group">
+      <label for="question">Question name</label>
+      <input
+        type="text"
+        class="form-control"
+        id="question"
+        name="question"
+        placeholder="Enter question"
+      />
+    </div>
+    <div class="form-group">
+      <label for="answer">Answer</label>
+      <input
+        type="text"
+        class="form-control"
+        id="answer"
+        name="answer"
+        placeholder="Enter answer"
+      />
+    </div>
+    <br />
+    <button type="submit" name="submit_button" value="add" class = "mybutton"><span class="material-symbols-outlined">add</span></button>
+    <button type="submit" name="submit_button" value="finish" class = "mybutton"><span class="material-symbols-outlined">check_small</span></button>
+</form>
+{% endblock %}

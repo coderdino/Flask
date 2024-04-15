@@ -1,0 +1,18 @@
+{% extends "base.html" %} {% block title %}Home{% endblock %} {% block content
+    %}
+    <br>
+    <div class="line">
+      <h2 class='lineUp' style='text-align:center;'>Welcome {{ user.first_name }}</h2>
+  </div>
+    <h2 align="center">Create a new flashcard set:</h2>
+    <h1>    </h1>
+    <form method="POST">
+      <textarea name="note" id="note" class="form-control"></textarea>
+      <h1>    </h1>
+      <br />
+      <h1>    </h1>
+      <div align="center">
+        <button class="mybutton" type="submit"><span class="material-symbols-outlined">add</span></button>
+      </div>
+    </form>
+    {% endblock %}

@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+
+Navbar
+<div>
+    <ul>
+        <li><a href="#home" style = "color: #2D3142">Home</a></li>
+        <li><a href="#news" style = "color: #2D3142">News</a></li>
+        <li><a href="#contact" style = "color: #2D3142">Contact</a></li>
+        <li style="float:right"><a href="#about"  style = "color: #2D3142">Name</a></li>
+    </ul>
+</div>
+<br>
+Error Messages
+
+<div class="alert" style = "color: #2D3142">
+    <span class="closebtn">&times;</span>  
+    <strong>Danger!</strong> Indicates a dangerous or potentially negative action.
+</div>
+  
+<div class="alert success" style = "color: #2D3142">
+    <span class="closebtn">&times;</span>  
+    <strong>Success!</strong> Indicates a successful or positive action.
+</div>
+  
+<div class="alert info" style = "color: #2D3142">
+    <span class="closebtn">&times;</span>  
+    <strong>Info!</strong> Indicates a neutral informative change or action.
+</div>
+  
+<div class="alert warning" style = "color: #2D3142">
+    <span class="closebtn">&times;</span>  
+    <strong>Warning!</strong> Indicates a warning that might need attention.
+</div>
+<br/>
+
+<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@20..48,100..700,0..1,-50..200" />
+    <button class="mybutton"><span class="material-symbols-outlined">add</span></button>
+    <button class="mybutton"><span class="material-symbols-outlined">expand_content</span></button>
+    <button class="mybutton2">show</button>
+
+Forms
+
+<!-- Rotating card -->
+<div class="card-wrapper">
+    <div id="card-1" class="card card-rotating text-center">
+      <!-- Front Side -->
+      <div class="face front">
+  
+        <!-- Content -->
+        <div class="card-body">
+          <h4 class="font-weight-bold mb-3">Marie Johnson</h4>
+          <p class="font-weight-bold blue-text">Web developer</p>
+          <!-- Triggering button -->
+          <a class="rotate-btn" data-card="card-1"><i class="fas fa-redo-alt"></i> Click here to rotate</a>
+        </div>
+      </div>
+      <!-- Front Side -->
+  
+      <!-- Back Side -->
+      <div class="face back">
+        <div class="card-body">
+  
+          <!-- Content -->
+          <h4 class="font-weight-bold mb-0">About me</h4>
+          <hr>
+          <p>
+            Lorem ipsum dolor sit amet, consectetur adipisicing elit. Fugiat tenetur odio suscipit non commodi vel
+            eius veniam maxime?</p>
+            <hr>
+            <a class="rotate-btn" data-card="card-1"><i class="fas fa-undo"></i> Click here to rotate back</a>
+  
+        </div>
+      </div>
+      <!-- Back Side -->
+  
+    </div>
+  </div>
+  <!-- Rotating card -->
+
+</body>
+</html>
+
