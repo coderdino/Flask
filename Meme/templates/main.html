@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Upload Photo</title>
+</head>
+
+<style>
+    .image-container {
+        display: flex;
+        height: 20%;
+        width: 20%;
+    }
+
+    .image-container div {
+        margin-right: 20px;
+        text-align: center;
+    }
+    img {
+       height: 500px;
+       width: 500px; 
+    }
+</style>
+
+<body>
+    <h1>Upload Photo</h1>
+    <form method="POST" action="/upload" enctype="multipart/form-data">
+        <input type="file" name="photo" accept="image/*" required>
+        <input type="submit" value="Upload">
+    </form>
+
+    {% if link %}
+        <h2>Uploaded Photo and Meme Photo:</h2>
+        <div class="image-container">
+            <div>
+                <img src="{{ link }}" alt="Uploaded Photo">
+                <h3>Uploaded Photo</h3>
+            </div>
+            <div>
+                <img src="{{ memelink }}" alt="Meme Photo">
+                <h3>Meme Photo</h3>
+            </div>
+        </div>
+    
+    {% endif %}
+
+</body>
+</html>
